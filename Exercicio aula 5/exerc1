@@ -1,0 +1,94 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+
+        Scanner usuario = new Scanner(System.in);
+
+
+      /*  int numerosecreto = 7;
+        int tentativa = 0;
+
+        while (numerosecreto != tentativa) {
+            System.out.print(" Adivinhe um nuemro de 1 a 10 : ");
+            tentativa = usuario.nextInt();
+
+
+            if (tentativa == numerosecreto) {
+                System.out.print(" você acertou !! ");
+            } else {
+                System.out.print(" Numero invalido ");
+            }
+usuario.close();
+
+
+        int contador = 1;
+        int acumulador = 0;
+
+        while (contador <= 100 ) {
+            System.out.println(contador+" ");
+            acumulador = acumulador + contador;
+            contador++;
+        }
+        System.out.println(" a soma é : " + acumulador);
+
+
+        int acumulador = 0;
+
+        for (int i = 1; i <= 100; i++) {
+            System.out.print(i + " ");
+            acumulador = acumulador + i;
+        }
+        System.out.println("\n a soma é : " + acumulador);
+
+
+        int rest;
+        String nome;
+        int idade;
+        rest = 1;
+
+        while (rest == 1) {
+
+                System.out.println("Digite seu nome : ");
+                nome = usuario.next();
+
+                System.out.println(" Digite sua idade : ");
+                idade = usuario.nextInt();
+            if (idade <= 18) {
+
+                System.out.print(" Seu nome é " + nome+ " você é maior de idade .");
+            } else {
+                System.out.println(" Seu nome é " +nome + " e você é , menor de idade ");
+
+            }
+            System.out.print(" Deseja continuar ? (1-Sim / 0-Não) : ");
+            rest = usuario.nextInt();
+        }
+        System.out.println(" Programa encerrado. ");
+            usuario.close();
+
+
+
+        double nota;
+
+        do{
+            System.out.println(" ****** Digite uma nota de 0 a 10 ****** ");
+            nota = usuario.nextDouble();
+        }while (nota < 0 || nota > 10 );
+        System.out.print(" Numero confirmado  ");
+        usuario.close();
+*/
+
+        int numero = 10;
+
+
+        for( 10 < || =5 ) {
+
+
+
+
+
+
+
+
