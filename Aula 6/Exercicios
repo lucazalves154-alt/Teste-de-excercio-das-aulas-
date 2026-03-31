@@ -1,0 +1,14 @@
+  // Ecercicio 2
+        for (int i = 15; i <= 100; i++) {
+            System.out.println("O quadrado " + i + " é " + ( i * i ));
+        
+
+         //Exercicio 3    
+         Scanner usuario = new Scanner(System.in);
+
+        System.out.println(" Digite um numero : ");
+         int n = usuario.nextInt();
+
+         System.out.print(" Sequencia : ");
+        for (int i = 1; i <= n; i++) {
+          System.out.print(i +"");
