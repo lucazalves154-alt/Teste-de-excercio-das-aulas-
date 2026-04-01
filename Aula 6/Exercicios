@@ -1,4 +1,15 @@
-  // Ecercicio 2
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+//Aluno: Lucas Alves Cordeiro 
+
+//Exercicio 1
+        for (int i = 100; i <= 200; i++) {
+            System.out.println(i);
+
+// Ecercicio 2
         for (int i = 15; i <= 100; i++) {
             System.out.println("O quadrado " + i + " é " + ( i * i ));
         
@@ -12,3 +23,5 @@
          System.out.print(" Sequencia : ");
         for (int i = 1; i <= n; i++) {
           System.out.print(i +"");
+
+//Exercicio 4
