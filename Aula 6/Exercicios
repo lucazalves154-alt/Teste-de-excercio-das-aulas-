@@ -6,22 +6,58 @@ public class Main {
 //Aluno: Lucas Alves Cordeiro 
 
 //Exercicio 1
-        for (int i = 100; i <= 200; i++) {
-            System.out.println(i);
+  import java.util.Scanner;
 
-// Ecercicio 2
-        for (int i = 15; i <= 100; i++) {
-            System.out.println("O quadrado " + i + " é " + ( i * i ));
+public class Main {
+    public static void main(String[] args) {
         
+       int numero = 100;
 
-         //Exercicio 3    
-         Scanner usuario = new Scanner(System.in);
+       while (numero <= 200){
+           System.out.println(numero +"");
+           numero ++;
 
-        System.out.println(" Digite um numero : ");
-         int n = usuario.nextInt();
+//Exercicio 2 
+ int numero = 1;
+        int contpar = 0;
+        int contimpar = 0;
 
-         System.out.print(" Sequencia : ");
-        for (int i = 1; i <= n; i++) {
-          System.out.print(i +"");
+        while (numero <= 10) {
+            if (numero % 2 == 0) {
+                System.out.println(numero + " - par ");
+                contpar++;
+            } else {
+                System.out.println(numero + " - Impar ");
+                contimpar++;
+            }
+            numero++;
+//Exercicio 3
+  Scanner sc = new Scanner(System.in);
 
-//Exercicio 4
+
+        int valor;
+        int max = 1024;
+        System.out.println("Digite um valor: ");
+        valor = sc.nextInt();
+
+
+        while (valor  < max) {
+            valor = valor * 2;
+            System.out.println(valor);
+//Exercicio 4 
+ Scanner sc = new Scanner(System.in);
+
+        System.out.print("Digite um número entre 10 e 20: ");
+        int numero = sc.nextInt();
+
+        if (numero >= 10 && numero <= 20) {
+            System.out.println("Metade: " + numero / 2.0);
+        } else {
+            System.out.println("Número fora do intervalo!");
+        }
+
+        sc.close();
+    }
+}
+
+
