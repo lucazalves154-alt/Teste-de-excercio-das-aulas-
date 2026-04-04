@@ -57,6 +57,26 @@ public class Main {
         }
 
         sc.close();
+//Exercicio 6
+
+    Scanner ns = new Scanner(System.in);
+
+        System.out.println(" Digite 1 nomero : ");
+        int menor = ns.nextInt();
+
+        int i = 1;
+
+        while (i <= 10) {
+            System.out.println(" Digite outro numero : ");
+            int num = ns.nextInt();
+
+            if (num < menor) {
+                menor = num;
+            }
+            i++;
+        }
+            System.out.print(" Menor numero = " + menor);
+
     }
 }
 
