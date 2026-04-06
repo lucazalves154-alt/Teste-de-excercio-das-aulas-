@@ -85,7 +85,7 @@ public class Main {
                 int contador = 0;
                 int i = 1;
 
-                while (i <= 2) { // se 1 for igual ou maior que 2 = verdadeiro
+                while (i <= 10) { // se 1 for igual ou maior que 2 = verdadeiro
                     System.out.print("Digite sua altura: ");
                     double altura = ns.nextDouble();         // Pergunta altura do usuario
 
