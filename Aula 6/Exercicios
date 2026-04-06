@@ -4,7 +4,6 @@ public class Main {
     public static void main(String[] args) {
 
 //Aluno: Lucas Alves Cordeiro 
-
 //Exercicio 1
   import java.util.Scanner;
 
@@ -80,4 +79,31 @@ public class Main {
     }
 }
 
+//Ecercicio 7
+ Scanner ns = new Scanner(System.in);
 
+                int contador = 0;
+                int i = 1;
+
+                while (i <= 2) { // se 1 for igual ou maior que 2 = verdadeiro
+                    System.out.print("Digite sua altura: ");
+                    double altura = ns.nextDouble();         // Pergunta altura do usuario
+
+                    System.out.print("Digite seu peso: ");     // Pergunta o peso do usuario
+                    double peso = ns.nextDouble();
+
+                    double imc = peso / (altura * altura);   // Com para a altura das duas pessoas
+
+                    if (imc >= 18.5 && imc <= 24.9) {    // fala qual peso esta ideal
+                        contador++;    // Incrementa mais 1 
+                    }
+
+                    i++; // incrementa mais 1 no resultado
+                }
+
+                System.out.println("Quantidade de pessoas no peso ideal: " + contador);  // Mostra peso ideial
+            }
+        }
+
+
+ 
