@@ -85,23 +85,23 @@ public class Main {
                 int contador = 0;
                 int i = 1;
 
-                while (i <= 10) { // se 1 for igual ou maior que 2 = verdadeiro
+                while (i <= 10) { 
                     System.out.print("Digite sua altura: ");
-                    double altura = ns.nextDouble();         // Pergunta altura do usuario
+                    double altura = ns.nextDouble();         
 
-                    System.out.print("Digite seu peso: ");     // Pergunta o peso do usuario
+                    System.out.print("Digite seu peso: ");  
                     double peso = ns.nextDouble();
 
-                    double imc = peso / (altura * altura);   // Com para a altura das duas pessoas
+                    double imc = peso / (altura * altura);  
 
-                    if (imc >= 18.5 && imc <= 24.9) {    // fala qual peso esta ideal
-                        contador++;    // Incrementa mais 1 
+                    if (imc >= 18.5 && imc <= 24.9) {    
+                        contador++;    
                     }
 
-                    i++; // incrementa mais 1 no resultado
+                    i++; 
                 }
 
-                System.out.println("Quantidade de pessoas no peso ideal: " + contador);  // Mostra peso ideial
+                System.out.println("Quantidade de pessoas no peso ideal: " + contador); 
             }
         }
 
