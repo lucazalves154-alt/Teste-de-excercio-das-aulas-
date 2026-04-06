@@ -104,6 +104,41 @@ public class Main {
                 System.out.println("Quantidade de pessoas no peso ideal: " + contador); 
             }
         }
+//Exercicio 8
+
+   Scanner ler = new Scanner(System.in);
+
+        int aluno = 1;
+
+        while (aluno <= 5) {
+
+            double nota1, nota2;
+            do {
+                System.out.println("Digite a nota do aluno  " + aluno + " : ");
+                nota1 = ler.nextInt();
 
 
- 
+                if (nota1 < 0 || nota1 > 10) {
+                    System.out.println(" Invalido , Digite uma nota de 1 a 10 ");
+                }
+
+            } while (nota1 < 0 || nota1 > 10) ;
+
+                do {
+                    System.out.println("Digite a segunda nota do aluno " + aluno + " : ");
+                    nota2 = ler.nextInt();
+
+                    if (nota2 < 0 || nota2 > 10) {
+                        System.out.println(" invalido , Digite uma nota de 0 a 10 ");
+                    }
+                } while (nota2 < 0 || nota2 > 10);
+
+                double media = (nota1 + nota2) / 2;
+                System.out.println(" Media do aluno " + aluno + ":" + media);
+
+                aluno++;
+            }
+
+            ler.close();
+        }
+    }
