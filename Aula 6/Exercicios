@@ -142,3 +142,68 @@ public class Main {
             ler.close();
         }
     }
+//Exercicio 9
+ Scanner ns = new Scanner(System.in);
+
+        int codigo, quantidade;
+        double totaldacompra = 0;
+        char continuar = 's';
+
+
+        while (continuar == 's' || continuar == 'S') {
+            System.out.print("-----Capardapio------");
+            System.out.println(" 1 -Cachorro quante (R$1.20)");
+            System.out.println(" 2 - Bauru Simples (R$1.30)");
+            System.out.println(" 3 - Bauru com ovo (R$1.50)");
+            System.out.println(" 4 - Cheeseburger (R$ 1.30)");
+            System.out.println(" 5 - Hambúrguer (R$1.20)");
+            System.out.println(" 6 - Refrigerante (R$1.00)");
+
+            System.out.print(" Digite o coigo do produto : ");
+            codigo = ns.nextInt();
+
+            System.out.print(" Digite a quantidade que deseja : ");
+            quantidade = ns.nextInt();
+
+            double preco = 0;
+            String nome = "";
+
+            switch (codigo) {
+                case 1:
+                    nome = "cachorro quente";
+                    preco = 1.20;
+                    break;
+                case 2:
+                    nome = "Bauru simples ";
+                    preco = 1.30;
+                    break;
+                case 3:
+                    nome = " Bauru com ovo ";
+                    preco = 1.50;
+                    break;
+                case 4:
+                    nome = " Cheesebúguer ";
+                    preco = 1.30;
+                    break;
+                case 5:
+                    nome = " Hambúrguer ";
+                    preco = 1.20;
+                    break;
+                case 6:
+                    nome = " Refrigerante ";
+                    preco = 1.00;
+                    break;
+                default:
+                    System.out.println(" Codigo invalido ! ");
+            }
+            double total = preco * quantidade;
+            totaldacompra += total;
+            System.out.println(nome + " - Total R$ " + total);
+
+            System.out.print(" Deseja continuar (s/n) : ");
+            continuar = ns.next().charAt(0);
+
+        }
+
+            }
+        }
