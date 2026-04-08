@@ -1,1 +1,14 @@
 
+import java.util.Scanner;
+
+//Aluno : Lucas Alves Cordeiro
+
+//Exercicio 1 :
+
+public class Main {
+    public static void main(String[] args) {
+        int i = 100;
+        while (i <= 200) {
+            System.out.print(i + " ");
+            i++;
+//Exercicio 2
