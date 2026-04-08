@@ -12,3 +12,147 @@ public class Main {
             System.out.print(i + " ");
             i++;
 //Exercicio 2
+public class Main{
+    public static void main(String[]args){
+        int i = 15;
+        while (i<= 100){
+            int quadrado= i * i;
+            System.out.println("o quadrado de " +i+ " é igual a:"+ quadrado);
+            i++;
+        }
+//Exercicio 3
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Digite um numero: ");
+        int numero = sc.nextInt();
+
+        System.out.println("Sequencia:");
+
+        for (int i = 1; i <= numero; i++){
+            
+            System.out.println(i);
+        }
+//Exercicio 4
+        Scanner sc = new Scanner(System.in);
+
+        int pessoas = 3;
+        double somaalturas = 0;
+        int contador = 0;
+
+        for (int i = 1; i <= pessoas; i++) {
+
+            System.out.println("Pessoa " + i);
+
+            System.out.print("Digite sua idade: ");
+            int idade = sc.nextInt();
+
+            System.out.print("Digite sua altura: ");
+            double altura = sc.nextDouble();
+
+            if (idade >= 50) {
+                somaalturas += altura;
+                contador++;
+            }
+        }
+        if (contador > 0) {
+            double media = somaalturas / contador;
+            System.out.printf("A média da altura das pessoas com + de 50 anos é: %.2f", media);
+        } else {
+            System.out.println("Não há pessoas com mais de 50 anos.");
+        }
+        sc.close();
+//Exercicio 5
+        Scanner sc = new Scanner(System.in);
+
+        int alunos = 6;
+
+        int qtdreprovados = 0;
+        int qtdexame = 0;
+        int qtdaprovados = 0;
+
+        double somamedias = 0;
+
+        for (int i = 1; i <= alunos; i++) {
+            System.out.println("Aluno " + i);
+
+            System.out.print("Digite a 1° nota: ");
+            double nota1 = sc.nextDouble();
+
+            System.out.print("Digite a 2° nota: ");
+            double nota2 = sc.nextDouble();
+
+            double media = (nota1 + nota2) / 2;
+            somamedias += media;
+
+            if (media <= 3) {
+                System.out.println("Reprovado.");
+                qtdreprovados++;
+            } else if (media < 7) {
+                System.out.println("Exame.");
+                qtdexame++;
+            } else if (media <= 10) {
+                System.out.println("Aprovado.");
+                qtdaprovados++;
+            } else {
+                System.out.println("Média inválida.");
+            }
+        }
+
+        double mediaSala = somamedias / alunos;
+
+        System.out.println("========== RESULTADOS ==========");
+        System.out.println("Reprovados: " + qtdreprovados);
+        System.out.println("Exame: " + qtdexame);
+        System.out.println("Aprovados: " + qtdaprovados);
+        System.out.printf("Média da sala: %.2f\n", mediaSala);
+        System.out.println("=================================");
+        sc.close();
+//Exercicio 7
+        Scanner sc = new Scanner(System.in);
+
+        int soma50 = 0;
+        int total50 = 0;
+        double somamediaalt = 0;
+        int totalsomamediaalt = 0;
+        double percent40 = 0;
+        int total40 = 0;
+        int pessoas = 2;
+
+        for (int i = 0; i < pessoas; i++) {
+            System.out.println("=========================");
+            System.out.println("Digite a sua idade: ");
+            int idade = sc.nextInt();
+            System.out.println("Digite sua altura: ");
+            double altura = sc.nextDouble();
+            System.out.println("Digite seu peso: ");
+            double peso = sc.nextDouble();
+            System.out.println("=========================");
+
+            if (idade >= 50) {
+                soma50++;
+            }
+            else if (idade > 10 && idade < 20) {
+                somamediaalt += altura;
+                totalsomamediaalt++;
+            }
+            else if (peso < 40) {
+                total40++;
+            }
+            else {
+                System.out.println("Invalido.");
+            }
+        }
+        System.out.println("Pessoas com mais de 50 anos: " + soma50);
+
+        if (totalsomamediaalt > 0) {
+            double mediaalt = somamediaalt / totalsomamediaalt;
+            System.out.println("Média de altura (10 a 20 anos): " + mediaalt);
+        }
+
+        double percent = ((double) total40 / pessoas) * 100;
+        System.out.printf("Porcentagem de pessoas com peso inferior a 40kg: %.2f%%", percent);
+    }
+}
+
+
+
