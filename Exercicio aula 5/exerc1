@@ -17,19 +17,29 @@ public class Main {
                     numero ++;
 
 //Exercicio 2
-                    int numero = 1;
-                    int contpar = 0;
-                    int contimpar = 0;
+ Scanner ler = new Scanner(System.in);
 
-                    while (numero <= 10) {
-                        if (numero % 2 == 0) {
-                            System.out.println(numero + " - par ");
-                            contpar++;
-                        } else {
-                            System.out.println(numero + " - Impar ");
-                            contimpar++;
-                        }
-                        numero++;
+        int i = 1;
+        int contpar = 0;
+        int contimpar = 0;
+
+
+        while (i <=10) {
+            System.out.print(" Digite o " + i + " numero : ");
+            int num = ler.nextInt();
+
+
+            if (num % 2 == 0) {
+                contpar++;
+            } else {
+                contimpar++;
+            }
+            i++;
+        }
+            System.out.println("O total de pares é: " + contpar);
+            System.out.print("O total de ímpares é:" + contimpar);
+
+                    
 //Exercicio 3
                         Scanner sc = new Scanner(System.in);
 
